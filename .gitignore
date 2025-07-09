@@ -1,0 +1,14 @@
+# Archivos sensibles y de entorno
+.env
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas temporales o caché
+/vendor/
+node_modules/
+
+# Configs específicas de IDEs
+.vscode/
+.idea/
