@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 // ==============================
 // Requerir controlador
 // ==============================
-require_once __DIR__ . '/../controller/ContactsController.php';
+require_once __DIR__ . '/../controllers/ContactsController.php';
 
 // Instanciar el controlador
 $controller = new ContactsController();
