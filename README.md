@@ -13,6 +13,7 @@ API RESTful construida en PHP para gestionar contactos. Incluye operaciones CRUD
 
 ## 📂 Estructura de carpetas
 
+```
 ├── 📁 api/                 # Endpoints públicos de la API
 │└── 📄 contacts.php     # Enrutador básico que maneja las peticiones HTTP
 ├── 📁 conf/                # Configuración de la conexión a la base de datos
@@ -28,7 +29,7 @@ API RESTful construida en PHP para gestionar contactos. Incluye operaciones CRUD
 📄 .env.example             # Archivo de ejemplo para variables de entorno
 📄 .gitignore               # Archivos y carpetas a excluir en el repositorio
 📄 README.md                # Documentación del proyecto
-
+```
 
 ## 🛠️ Tecnologías
 
@@ -53,9 +54,19 @@ DB_PASSWORD=...
 
 3️⃣ Importa el schema con el archivo `sql/schema.sql`
 
+```
+CREATE TABLE IF NOT EXISTS contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150),
+    phone VARCHAR(30),
+    notes VARCHAR(255)
+);
+```
+
 4️⃣ Despliega o prueba localmente con tu servidor PHP
 
-## 🚀 Uso
+## 🚀 Endpoints
 
 - GET /api/index.php?path=contacts
 - GET /api/index.php?path=contact&id=1
