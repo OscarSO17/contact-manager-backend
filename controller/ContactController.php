@@ -1,7 +1,7 @@
 <?php
     require_once __DIR__ . '/../conf/database.php';
     require_once __DIR__ . '/../dao/ContactDAO.php';    
-    require_once __DIR__ . '/../models/Contact.php';
+    require_once __DIR__ . '/../model/Contact.php';
 
     /**
      * Controlador para gestionar operaciones sobre contactos.
