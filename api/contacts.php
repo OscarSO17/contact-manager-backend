@@ -24,7 +24,7 @@
     require_once __DIR__ . '/../controller/ContactController.php';
 
     // Instanciar el controlador
-    $controller = new ContactsController();
+    $controller = new ContactController();
 
     // ==============================
     // Obtener método y ruta solicitada
